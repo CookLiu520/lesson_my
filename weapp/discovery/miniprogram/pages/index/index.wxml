@@ -1,0 +1,10 @@
+<!--写页面结构的地方-->
+<!-- view相当于div -->
+<view class="container">
+<navigator url="../detail/index">
+  <text class="title">{{title}}</text>
+</navigator>
+
+<image class="car" src="{{car}}">
+</image>
+</view>
