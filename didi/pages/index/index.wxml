@@ -1,0 +1,25 @@
+<view class="container">
+    <!-- 地图组件 -->
+    <!--scale 数字越大越详细 --> 
+    <map 
+        class="map" 
+        latitude="{{latitude}}"
+        longitude="{{longitude}}"
+        scale="16"
+        show-location="true"
+        markers="{{markers}}"
+        id="myMap"
+    >
+        <cover-view class="top-tips">
+            <cover-image class="top-icon" src="/images/map-bycycle.png"></cover-image>            
+            <cover-view class="top-text">青桔单车</cover-view>
+        </cover-view>
+        <cover-image
+            bindtap="toReset"
+            src="/images/reset.png"
+            class="map-icon map-icon_reset"
+        >
+        </cover-image>
+    </map>
+
+</view>
