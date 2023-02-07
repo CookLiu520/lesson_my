@@ -14,3 +14,7 @@
     wx.createMapContext('myMap')
   6. 移动地图回到定位点
     may.moveToLocation()
+
+- 在开发哪个页面，app.json中把相应的页面提前
+- 接口请求fastmock
+- flex弹性布局

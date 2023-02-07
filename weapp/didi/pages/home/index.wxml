@@ -1,0 +1,22 @@
+<view 
+class="flex wp_cell"
+wx:for="{{movies}}"
+wx:key="id"
+>
+<!-- BEM -->
+  <view class="wp_cell__hd">
+    <image src="{{item.pic}}"></image>
+  </view>
+  <view class="wp_cell__bd">
+    <view>{{item.title}}</view>
+    <view>{{item.subTitle}}</view> 
+    <view>{{item.author}}</view>
+  </view>
+  <view class="wp_cell__ft">
+    <view>{{item.score}}</view>
+    <view>{{item.action}}</view>
+  </view>
+</view>
+
+
+

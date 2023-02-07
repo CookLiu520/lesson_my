@@ -1,0 +1,46 @@
+.wp_cell__hd,
+.wp_cell__bd,
+.wp_cell__ft{
+  height: 200rpx;
+}
+.wp_cell__hd{
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  /* background-color: red; */
+  width: 100rpx;
+}
+.wp_cell__hd image{
+  width: 100%;
+  height: 100%;
+}
+.wp_cell__bd{
+  /* background-color: green; */
+  flex: 1;
+  padding-left: 20rpx;
+  padding-top: 50rpx;
+}
+.wp_cell__bd view:first-child{
+  font-size: 40rpx;
+}
+.wp_cell__ft{
+  /* background-color: pink; */
+  width: 100rpx;
+  padding-top: 50rpx;
+}
+.wp_cell__ft view:first-child{
+  color: red;
+  margin-bottom: 20rpx;
+}
+
+.wp_cell__ft view:last-child{
+  height: 50rpx;
+  border: 1px solid green;
+  color: green;
+  text-align: center;
+  line-height: 50rpx;
+}
+
+
+.wp_cell{
+  border-bottom: 1px solid #000;
+}
