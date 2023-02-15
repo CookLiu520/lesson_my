@@ -31,3 +31,30 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 
     header + main.content
     导航 nav App.vue + router-view 页面级别组件
+
+- 路由守卫
+    1. 鉴权
+        to + token +login meta
+    2. document.title + name匹配的标题 utils config.js
+    3. layout 布局状态 login不需要侧边栏
+    4. 用户直接从非/ 进入，分享点击
+        state.currentPath = to.path
+
+- 表单组件
+    el-form
+    el-form-item
+    el-input
+    容器组件
+    子组件  受控组件
+    - label-position
+    - :rules="state.rules"   在el-form容器组件中统一设置
+        数组 每个input的输入规则
+    - ：model='state.formData'表单为收集数据而来
+        {
+            "username":;
+            "password":
+        }
+        el-form-item prop="username"
+            el-input v-model="state.formData.username"
+    - ref="loginForm"
+        el-form对象组件也是对象 这个对象上的方法
